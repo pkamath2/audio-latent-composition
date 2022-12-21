@@ -1,5 +1,5 @@
 import torch, os
-from audio_latent_composition.utils import customnet, util
+from utils import customnet, util
 from argparse import Namespace
 # from utils.pt_stylegan2 import get_generator
 from collections import OrderedDict

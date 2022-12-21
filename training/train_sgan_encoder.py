@@ -9,8 +9,8 @@ import torch.backends.cudnn as cudnn
 from torchsummary import summary
 from tqdm import tqdm
 
-from audio_latent_composition.utils import util, training_utils, losses, masking
-from audio_latent_composition.networks import stylegan_encoder
+from utils import util, training_utils, losses, masking
+from networks import stylegan_encoder
 
 
 def train(opt):
