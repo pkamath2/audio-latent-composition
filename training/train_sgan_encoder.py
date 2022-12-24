@@ -6,10 +6,12 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.backends.cudnn as cudnn
+import torchvision.utils as vutils
 from torchsummary import summary
 from tqdm import tqdm
+import matplotlib.pyplot as plt
 
-from utils import util, training_utils, losses, masking
+from utils import util, training_utils, losses, masking, gmloss
 from networks import stylegan_encoder
 
 
@@ -53,6 +55,10 @@ def train(opt):
     # l1_loss = nn.L1Loss()
     perceptual_loss = losses.LPIPS_Loss(net='vgg', use_gpu=has_cuda)
     util.set_requires_grad(False, perceptual_loss)
+    
+    #Autocorrelation Loss
+    gram_loss = gmloss.GMLoss().eval().cuda()
+    util.set_requires_grad(False, gram_loss)
 
     reshape = training_utils.make_ipol_layer(256)
     optimizerE = optim.Adam(netE.parameters(), lr=opt.lr, betas=(opt.beta1, 0.999))
@@ -90,6 +96,7 @@ def train(opt):
             break
 
         print(device)
+        all_losses = dict(z=[], mse=[], lpips=[], autocorrelation=[])
         # run a train epoch of epoch_batches batches
         for step, z_batch in enumerate(tqdm(
             epoch_loader, total=epoch_batches), 1):
@@ -114,41 +121,113 @@ def train(opt):
             loss_mse = mse_loss(regenerated, fake_im)
             loss_perceptual = perceptual_loss.forward(
                 reshape(regenerated), reshape(fake_im)).mean()
+            loss_autocorrelation = gram_loss(fake_im, regenerated)
 
-            loss_id = torch.Tensor((0.,)).to(device)
             loss = (opt.lambda_latent * loss_latent
                     + opt.lambda_mse * loss_mse
                     + opt.lambda_lpips * loss_perceptual
-                    + opt.lambda_id * loss_id)
+                    + loss_autocorrelation)
 
             # optimize
             loss.backward()
             optimizerE.step()
 
-            tqdm.write("Epoch %d step %d Losses z %0.4f mse %0.4f id %0.4f lpips %0.4f total %0.4f"
+            all_losses['z'].append(loss_latent.item())
+            all_losses['mse'].append(loss_mse.item())
+            all_losses['lpips'].append(loss_perceptual.item())
+            all_losses['autocorrelation'].append(loss_autocorrelation.item())
+            all_losses['totalloss'].append(loss.item())
+
+            tqdm.write("Epoch %d step %d Losses z %0.4f mse %0.4f lpips %0.4f autocorrelation %0.4f total %0.4f"
                            % (epoch, step, loss_latent.item(), loss_mse.item(),
-                              loss_id.item(), loss_perceptual.item(), loss.item()))
+                              loss_perceptual.item(), loss_autocorrelation.item(), loss.item()))
+
+        # updated to run a small set of test zs 
+        # rather than a single fixed batch
+        netE.eval()
+        test_metrics = {
+            'loss_latent': util.AverageMeter('loss_latent'),
+            'loss_mse': util.AverageMeter('loss_mse'),
+            'loss_perceptual': util.AverageMeter('loss_perceptual'),
+            'loss_id': util.AverageMeter('loss_id'),
+            'loss_total': util.AverageMeter('loss_total'),
+        }
+        for step, test_zs in enumerate(tqdm(test_loader), 1):
+            with torch.no_grad():
+                test_zs = test_zs.to(device)
+                fake_ws = G.mapping(test_zs, None)
+                fake_im = G.synthesis(fake_ws) #Output Shape = batch_size (16) X 1 X 256 X 256 
+                
+
+                if has_masked_input:
+                    hints_fake, mask_fake = masking.mask_upsample(fake_im)
+                    mask_fake = mask_fake + 0.5 # trained in range [0, 1]
+                    encoded = netE(torch.cat([hints_fake, mask_fake], dim=1))
+                    regenerated = G(encoded, label)
+
+                # compute loss
+                # fake_wplus = torch.stack([fake_ws] * encoded.shape[1], dim=1)
+                encoded_broadcasted = torch.stack([encoded] * fake_ws.shape[1], dim=1)
+                loss_latent = mse_loss(encoded_broadcasted, fake_ws)
+                loss_mse = mse_loss(regenerated, fake_im)
+                loss_perceptual = perceptual_loss.forward(
+                    reshape(regenerated), reshape(fake_im)).mean()
+                loss_autocorrelation = gram_loss(fake_im, regenerated)
+
+                loss = (opt.lambda_latent * loss_latent
+                        + opt.lambda_mse * loss_mse
+                        + opt.lambda_lpips * loss_perceptual
+                        + loss_autocorrelation)
+
+                tqdm.write("Validation Epoch %d step %d Losses z %0.4f mse %0.4f lpips %0.4f autocorrelation %0.4f total %0.4f"
+                           % (epoch, step, loss_latent.item(), loss_mse.item(),
+                              loss_perceptual.item(), loss_autocorrelation.item(), loss.item()))
+
+            # update running avg
+            test_metrics['loss_latent'].update(loss_latent)
+            test_metrics['loss_mse'].update(loss_mse)
+            test_metrics['loss_perceptual'].update(loss_perceptual)
+            test_metrics['loss_autocorrelation'].update(loss_autocorrelation)
+            test_metrics['loss_total'].update(loss)
+
+            # save a fixed batch for visualization
+            if step == 1:
+                grid = vutils.make_grid(
+                    torch.cat((reshape(fake_im), reshape(hints_fake),
+                                reshape(regenerated))),
+                    nrow=8, normalize=True, scale_each=(-1, 1))
+                
 
         # do checkpointing
         if epoch % 50 == 0 or epoch == opt.niter:
             print('Saving Checkpoint')
             training_utils.make_checkpoint(
                 netE, optimizerE, epoch,
-                None,# test_metrics['loss_total'].avg.item(),
+                test_metrics['loss_total'].avg.item(),
                 '%s/netE_epoch_%d.pth' % (opt.outf, epoch))
 
+            fig, ax = plt.subplots(1,5, figsize=(20, 3))
+            ax[0].plot(all_losses['z'])
+            ax[0].set_title('Z loss')
+            ax[1].plot(all_losses['mse'])
+            ax[1].set_title('MSE loss')
+            ax[2].plot(all_losses['lpips'])
+            ax[2].set_title('LPIPS loss')
+            ax[3].plot(all_losses['autocorrelation'])
+            ax[3].set_title('Autocorrelation loss')
+            ax[4].plot(all_losses['totalloss'])
+            ax[4].set_title('Total loss')
+            fig.savefig('%s/netE_epoch_%d.png' % (opt.outf, epoch))
 
-
-
-
-class InterpolationLayer(torch.nn.Module):
-    def __init__(self, size):
-        super(InterpolationLayer, self).__init__()
-
-        self.size=size
-
-    def forward(self, x):
-        return interpolate(x, size=self.size, mode='area')
+        if test_metrics['loss_total'].avg.item() < best_val_loss:
+            # modified to save based on test zs loss rather than
+            # final model at the end
+            print("Best Validation Loss: Checkpointing at epoch %d" % epoch)
+            training_utils.make_checkpoint(
+                netE, optimizerE, epoch,
+                test_metrics['loss_total'].avg.item(),
+                '%s/netE_epoch_best.pth' % (opt.outf))
+            best_val_loss = test_metrics['loss_total'].avg.item()
 
 
 if __name__ == '__main__':
