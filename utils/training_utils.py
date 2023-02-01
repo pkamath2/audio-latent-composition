@@ -20,11 +20,9 @@ def make_parser():
     parser.add_argument('--lambda_latent', default=1.0, type=float, help='loss weighting (latent recovery)')
     parser.add_argument('--lambda_mse', default=1.0, type=float, help='loss weighting (image mse)')
     parser.add_argument('--lambda_lpips', default=1.0, type=float, help='loss weighting (image perceptual)')
-    parser.add_argument('--lambda_id', default=0.0, type=float, help='loss weighting (optional identity loss for faces)')
+    # parser.add_argument('--lambda_id', default=0.0, type=float, help='loss weighting (optional identity loss for faces)')
+    parser.add_argument('--thresholding', default=None, type=int, help='Thresholding for the generated spectrogram while training')
 
-    # parser.add_argument('--netG', type=str, required=True, help="generator to load")
-    # parser.add_argument('--masked', action='store_true', help="train with masking")
-    # parser.add_argument('--vae_like', action='store_true', help='train with masking, predict mean and sigma (not used in paper)')
     return parser
 
 ### checkpointing
@@ -57,11 +55,6 @@ def training_loader(batch_size, global_seed=0):
         rng = np.random.RandomState(g_epoch+global_seed)
         z_data = torch.from_numpy(rng.standard_normal(n * z_dim)
                 .reshape(n, z_dim)).float()
-        # if device is None:
-        #     result = result.to(self.device)
-        # else:
-        #     result = result.to(device)
-
             
         dataloader = torch.utils.data.DataLoader(
                 z_data,
@@ -82,8 +75,7 @@ def testing_loader(batch_size, global_seed=0):
     rng = np.random.RandomState(global_seed)
     z_data = torch.from_numpy(rng.standard_normal(n * z_dim)
             .reshape(n, z_dim)).float()
-    # z_data = nets.sample_zs(n=10*batch_size, seed=global_seed,
-    #                         device='cpu')
+    
     dataloader = torch.utils.data.DataLoader(
             z_data,
             shuffle=False,
