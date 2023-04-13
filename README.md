@@ -2,7 +2,7 @@
 
 This project is part of a paper titled "Perceptually Guided Audio Texture Generation" under review.
     
-[Paper]() | [Demo Webpage]() | [Citation](#citation)
+[Paper]() | [Demo Webpage](https://guided-control-by-prototypes.s3.ap-southeast-1.amazonaws.com/audio-guided-generation/index.html) | [Citation](#citation)
     
 <img src='resources/feature-diag.png' style="background-color: #cccccc">
     
