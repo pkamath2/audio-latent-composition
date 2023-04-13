@@ -1,0 +1,23 @@
+{
+    "ckpt_path": "/home/purnima/appdir/Github/StyleGANs/audio-stylegan2/training-runs/vis-data-256-split/00000/network-snapshot-002800.pkl",
+    "outf": "checkpoints/temp-test",
+    "batchSize": 8,
+    "seed": 0,
+    "netE_type": "resnet-34",
+    "lr": 0.0001,
+    "niter": 1500,
+    "beta1": 0.5,
+    "lambda_mse": 1.0,
+    "lambda_lpips": 0.0,
+    "lambda_latent": 1.0,
+    "use_thresholding": false,
+    "thresholding": 17,
+    "netE":"",
+    "finetune":"",
+    "stft_channels": 512,
+    "n_frames": 256,
+    "hop_size": 128,
+    "sample_rate": 16000,
+    "z_dim": 128,
+    "w_dim": 128
+}

@@ -5,25 +5,25 @@ import numpy as np
 
 ### arguments
 
-def make_parser():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--ckpt_path', type=str, required=True, help="Checkpoint")
-    parser.add_argument('--outf', default='.', help='folder to output model checkpoints')
-    parser.add_argument('--seed', default=0, type=int, help='manual seed')
-    parser.add_argument('--batchSize', type=int, default=16, help='input batch size')
-    parser.add_argument('--netE_type', type=str, required=True, help='type of encoder architecture; e.g. resnet-18, resnet-34')
-    parser.add_argument('--netE', default='', help="path to netE (to continue training)")
-    parser.add_argument('--finetune', type=str, default='', help="finetune from weights at this path")
-    parser.add_argument('--niter', type=int, default=1000, help='number of epochs to train for')
-    parser.add_argument('--lr', type=float, default=0.0001, help='learning rate, default=0.0001')
-    parser.add_argument('--beta1', type=float, default=0.5, help='beta1 for adam. default=0.5')
-    parser.add_argument('--lambda_latent', default=1.0, type=float, help='loss weighting (latent recovery)')
-    parser.add_argument('--lambda_mse', default=1.0, type=float, help='loss weighting (image mse)')
-    parser.add_argument('--lambda_lpips', default=1.0, type=float, help='loss weighting (image perceptual)')
-    # parser.add_argument('--lambda_id', default=0.0, type=float, help='loss weighting (optional identity loss for faces)')
-    parser.add_argument('--thresholding', default=None, type=int, help='Thresholding for the generated spectrogram while training')
+# Moved to config.json
+# def make_parser():
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument('--ckpt_path', type=str, required=True, help="Checkpoint")
+#     parser.add_argument('--outf', default='.', help='folder to output model checkpoints')
+#     parser.add_argument('--seed', default=0, type=int, help='manual seed')
+#     parser.add_argument('--batchSize', type=int, default=16, help='input batch size')
+#     parser.add_argument('--netE_type', type=str, required=True, help='type of encoder architecture; e.g. resnet-18, resnet-34')
+#     parser.add_argument('--netE', default='', help="path to netE (to continue training)")
+#     parser.add_argument('--finetune', type=str, default='', help="finetune from weights at this path")
+#     parser.add_argument('--niter', type=int, default=1000, help='number of epochs to train for')
+#     parser.add_argument('--lr', type=float, default=0.0001, help='learning rate, default=0.0001')
+#     parser.add_argument('--beta1', type=float, default=0.5, help='beta1 for adam. default=0.5')
+#     parser.add_argument('--lambda_latent', default=1.0, type=float, help='loss weighting (latent recovery)')
+#     parser.add_argument('--lambda_mse', default=1.0, type=float, help='loss weighting (image mse)')
+#     parser.add_argument('--lambda_lpips', default=0.0, type=float, help='loss weighting (image perceptual)')
+#     parser.add_argument('--thresholding', default=None, type=int, help='Thresholding for the generated spectrogram while training')
 
-    return parser
+#     return parser
 
 ### checkpointing
 
