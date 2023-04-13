@@ -10,7 +10,7 @@ In this paper, we employ an exemplar based approach in conjunction with a pre-tr
      
 We generate synthetic examples based on William Gaver's "Everyday Listening" approach and find their matching real-world samples by inverting the synthetic samples from the latent space of a pre-trained StyleGAN2. These samples and their respective latent space embeddings are used to derive directional vectors to provide semantic guidance over audio texture generation. Such vectors are able to provide "synthesizer-like" continuous control while generation sounds from the latent space of the GAN.
     
-This repo is adapted to audio from Chai et al., "Using latent space regression to analyze and leverage compositionality in GAN".  [Paper](http://arxiv.org/abs/2103.10426) and [Code](https://github.com/chail/latent-composition).
+This repo is adapted and modified for use with audio from Chai et al., "Using latent space regression to analyze and leverage compositionality in GAN".  [Paper](http://arxiv.org/abs/2103.10426) and [Code](https://github.com/chail/latent-composition).
 
 ### Table of Contents
 
