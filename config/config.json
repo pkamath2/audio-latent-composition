@@ -1,5 +1,5 @@
 {
-    "ckpt_path": "/home/purnima/appdir/Github/StyleGANs/audio-stylegan2/training-runs/vis-data-256-split/00000/network-snapshot-002800.pkl",
+    "ckpt_path": "checkpoints/stylegan2/greatesthits/network-snapshot-002800.pkl",
     "outf": "checkpoints/temp-test",
     "batchSize": 8,
     "seed": 0,
