@@ -1,6 +1,6 @@
 {
     "ckpt_path": "checkpoints/stylegan2/greatesthits/network-snapshot-002800.pkl",
-    "outf": "checkpoints/temp-test",
+    "outf": "checkpoints/encoder/greatesthits/0/",
     "batchSize": 8,
     "seed": 0,
     "netE_type": "resnet-34",
