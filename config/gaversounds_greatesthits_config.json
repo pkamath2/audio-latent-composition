@@ -1,1 +1,666 @@
-{"scratch_tinny_sample0_rate0": {"impulse_time": 0.95, "attack_lf": 200, "attack_hf": 7900, "trail_lf": 2000, "trail_hf": 7900, "damping_mult": 0.2, "damping_fade_expo": 1, "filter_order": 1, "hittype": "scratch", "locs": [0.05]}, "scratch_tinny_sample0_rate1": {"impulse_time": 0.65, "attack_lf": 200, "attack_hf": 7900, "trail_lf": 2000, "trail_hf": 7900, "damping_mult": 0.5, "damping_fade_expo": 2, "filter_order": 1, "hittype": "scratch", "locs": [0.05, 1.05]}, "scratch_tinny_sample0_rate2": {"impulse_time": 0.55, "attack_lf": 200, "attack_hf": 7900, "trail_lf": 2000, "trail_hf": 7900, "damping_mult": 0.5, "damping_fade_expo": 2, "filter_order": 1, "hittype": "scratch", "locs": [0.05, 0.9, 1.75]}, "scratch_tinny_sample0_rate3": {"impulse_time": 0.45, "attack_lf": 200, "attack_hf": 7900, "trail_lf": 2000, "trail_hf": 7900, "damping_mult": 0.4, "damping_fade_expo": 2, "filter_order": 1, "hittype": "scratch", "locs": [0.05, 0.45, 0.85, 1.25, 1.65]}, "scratch_tinny_sample0_rate4": {"impulse_time": 0.15, "attack_lf": 200, "attack_hf": 7900, "trail_lf": 2000, "trail_hf": 7900, "damping_mult": 0.4, "damping_fade_expo": 2, "filter_order": 1, "hittype": "scratch", "locs": [0.05, 0.35, 0.65, 0.95, 1.25, 1.55, 1.85]}, "scratch_tinny_sample1_rate0": {"impulse_time": 0.85, "attack_lf": 500, "attack_hf": 7900, "trail_lf": 4000, "trail_hf": 7900, "damping_mult": 0.2, "damping_fade_expo": 1, "filter_order": 2, "hittype": "scratch", "locs": [0.05]}, "scratch_tinny_sample1_rate1": {"impulse_time": 0.65, "attack_lf": 500, "attack_hf": 7900, "trail_lf": 4000, "trail_hf": 7900, "damping_mult": 0.2, "damping_fade_expo": 2, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 1.05]}, "scratch_tinny_sample1_rate2": {"impulse_time": 0.55, "attack_lf": 500, "attack_hf": 7900, "trail_lf": 4000, "trail_hf": 7900, "damping_mult": 0.2, "damping_fade_expo": 2, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 0.9, 1.75]}, "scratch_tinny_sample1_rate3": {"impulse_time": 0.45, "attack_lf": 500, "attack_hf": 7900, "trail_lf": 4000, "trail_hf": 7900, "damping_mult": 0.4, "damping_fade_expo": 3, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 0.45, 0.85, 1.25, 1.65]}, "scratch_tinny_sample1_rate4": {"impulse_time": 0.15, "attack_lf": 500, "attack_hf": 7900, "trail_lf": 4000, "trail_hf": 7900, "damping_mult": 0.4, "damping_fade_expo": 3, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 0.35, 0.65, 0.95, 1.25, 1.55, 1.85]}, "scratch_muffled_sample0_rate0": {"impulse_time": 1.2, "attack_lf": 100, "attack_hf": 500, "trail_lf": 100, "trail_hf": 500, "damping_mult": 0.99, "damping_fade_expo": 2, "filter_order": 2, "hittype": "scratch", "locs": [0.05]}, "scratch_muffled_sample0_rate1": {"impulse_time": 0.75, "attack_lf": 100, "attack_hf": 500, "trail_lf": 100, "trail_hf": 500, "damping_mult": 0.7, "damping_fade_expo": 1, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 1.05]}, "scratch_muffled_sample0_rate2": {"impulse_time": 0.5, "attack_lf": 100, "attack_hf": 500, "trail_lf": 100, "trail_hf": 500, "damping_mult": 0.7, "damping_fade_expo": 1, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 0.9, 1.75]}, "scratch_muffled_sample0_rate3": {"impulse_time": 0.25, "attack_lf": 100, "attack_hf": 500, "trail_lf": 100, "trail_hf": 500, "damping_mult": 0.7, "damping_fade_expo": 1, "filter_order": 1, "hittype": "scratch", "locs": [0.05, 0.45, 0.85, 1.25, 1.65]}, "scratch_muffled_sample0_rate4": {"impulse_time": 0.15, "attack_lf": 100, "attack_hf": 500, "trail_lf": 100, "trail_hf": 500, "damping_mult": 0.7, "damping_fade_expo": 1, "filter_order": 1, "hittype": "scratch", "locs": [0.05, 0.35, 0.65, 0.95, 1.25, 1.55, 1.85]}, "scratch_muffled_sample1_rate0": {"impulse_time": 1.2, "attack_lf": 100, "attack_hf": 1500, "trail_lf": 100, "trail_hf": 1500, "damping_mult": 0.99, "damping_fade_expo": 2, "filter_order": 2, "hittype": "scratch", "locs": [0.05]}, "scratch_muffled_sample1_rate1": {"impulse_time": 0.75, "attack_lf": 100, "attack_hf": 1500, "trail_lf": 100, "trail_hf": 1000, "damping_mult": 0.99, "damping_fade_expo": 2, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 1.05]}, "scratch_muffled_sample1_rate2": {"impulse_time": 0.7, "attack_lf": 100, "attack_hf": 1500, "trail_lf": 100, "trail_hf": 1500, "damping_mult": 0.99, "damping_fade_expo": 2, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 0.9, 1.75]}, "scratch_muffled_sample1_rate3": {"impulse_time": 0.25, "attack_lf": 100, "attack_hf": 1000, "trail_lf": 100, "trail_hf": 1000, "damping_mult": 0.7, "damping_fade_expo": 1, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 0.45, 0.85, 1.25, 1.65]}, "scratch_muffled_sample1_rate4": {"impulse_time": 0.15, "attack_lf": 100, "attack_hf": 1000, "trail_lf": 100, "trail_hf": 1000, "damping_mult": 0.7, "damping_fade_expo": 1, "filter_order": 2, "hittype": "scratch", "locs": [0.05, 0.35, 0.65, 0.95, 1.25, 1.55, 1.85]}, "hit_tinny_sample0_rate0": {"impulse_time": 0.4, "attack_lf": 1000, "attack_hf": 7900, "trail_lf": 1000, "trail_hf": 7900, "damping_mult": 0.3, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05]}, "hit_tinny_sample0_rate1": {"impulse_time": 0.4, "attack_lf": 1000, "attack_hf": 7900, "trail_lf": 1000, "trail_hf": 7900, "damping_mult": 0.3, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05, 1.05]}, "hit_tinny_sample0_rate2": {"impulse_time": 0.3, "attack_lf": 1000, "attack_hf": 7900, "trail_lf": 1000, "trail_hf": 7900, "damping_mult": 0.3, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05, 0.9, 1.75]}, "hit_tinny_sample0_rate3": {"impulse_time": 0.05, "attack_lf": 1000, "attack_hf": 7900, "trail_lf": 1000, "trail_hf": 7900, "damping_mult": 0.3, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05, 0.45, 0.85, 1.25, 1.65]}, "hit_tinny_sample0_rate4": {"impulse_time": 0.05, "attack_lf": 1000, "attack_hf": 7900, "trail_lf": 1000, "trail_hf": 7900, "damping_mult": 0.3, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05, 0.35, 0.65, 0.95, 1.25, 1.55, 1.85]}, "hit_tinny_sample1_rate0": {"impulse_time": 0.4, "attack_lf": 2000, "attack_hf": 7500, "trail_lf": 5000, "trail_hf": 7500, "damping_mult": 0.2, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05]}, "hit_tinny_sample1_rate1": {"impulse_time": 0.4, "attack_lf": 2000, "attack_hf": 7500, "trail_lf": 5000, "trail_hf": 7500, "damping_mult": 0.2, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05, 1.05]}, "hit_tinny_sample1_rate2": {"impulse_time": 0.3, "attack_lf": 2000, "attack_hf": 7500, "trail_lf": 5000, "trail_hf": 7500, "damping_mult": 0.2, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05, 0.9, 1.75]}, "hit_tinny_sample1_rate3": {"impulse_time": 0.1, "attack_lf": 2000, "attack_hf": 7500, "trail_lf": 5000, "trail_hf": 7500, "damping_mult": 0.2, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05, 0.45, 0.85, 1.25, 1.65]}, "hit_tinny_sample1_rate4": {"impulse_time": 0.1, "attack_lf": 2000, "attack_hf": 7500, "trail_lf": 5000, "trail_hf": 7500, "damping_mult": 0.2, "damping_fade_expo": 1, "filter_order": 1, "hittype": "hit", "locs": [0.05, 0.35, 0.65, 0.95, 1.25, 1.55, 1.85]}, "hit_muffled_sample0_rate0": {"impulse_time": 0.3, "attack_lf": 100, "attack_hf": 1000, "trail_lf": 100, "trail_hf": 1000, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05]}, "hit_muffled_sample0_rate1": {"impulse_time": 0.2, "attack_lf": 100, "attack_hf": 1000, "trail_lf": 100, "trail_hf": 1000, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05, 1.05]}, "hit_muffled_sample0_rate2": {"impulse_time": 0.2, "attack_lf": 100, "attack_hf": 1000, "trail_lf": 100, "trail_hf": 1000, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05, 0.9, 1.75]}, "hit_muffled_sample0_rate3": {"impulse_time": 0.1, "attack_lf": 100, "attack_hf": 1000, "trail_lf": 100, "trail_hf": 1000, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05, 0.45, 0.85, 1.25, 1.65]}, "hit_muffled_sample0_rate4": {"impulse_time": 0.1, "attack_lf": 100, "attack_hf": 1000, "trail_lf": 100, "trail_hf": 1000, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05, 0.35, 0.65, 0.95, 1.25, 1.55, 1.85]}, "hit_muffled_sample1_rate0": {"impulse_time": 0.15, "attack_lf": 100, "attack_hf": 1750, "trail_lf": 100, "trail_hf": 1750, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05]}, "hit_muffled_sample1_rate1": {"impulse_time": 0.2, "attack_lf": 100, "attack_hf": 1750, "trail_lf": 100, "trail_hf": 1750, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05, 1.05]}, "hit_muffled_sample1_rate2": {"impulse_time": 0.2, "attack_lf": 100, "attack_hf": 1750, "trail_lf": 100, "trail_hf": 1750, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05, 0.9, 1.75]}, "hit_muffled_sample1_rate3": {"impulse_time": 0.1, "attack_lf": 100, "attack_hf": 1550, "trail_lf": 100, "trail_hf": 1550, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05, 0.45, 0.85, 1.25, 1.65]}, "hit_muffled_sample1_rate4": {"impulse_time": 0.05, "attack_lf": 100, "attack_hf": 1550, "trail_lf": 100, "trail_hf": 1550, "damping_mult": 0.9, "damping_fade_expo": 2, "filter_order": 2, "hittype": "hit", "locs": [0.05, 0.35, 0.65, 0.95, 1.25, 1.55, 1.85]}}
+{
+    "scratch_tinny_sample0_rate0": {
+        "impulse_time": 0.95,
+        "attack_lf": 200,
+        "attack_hf": 7900,
+        "trail_lf": 2000,
+        "trail_hf": 7900,
+        "damping_mult": 0.2,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "scratch",
+        "locs": [
+            0.05
+        ]
+    },
+    "scratch_tinny_sample0_rate1": {
+        "impulse_time": 0.65,
+        "attack_lf": 200,
+        "attack_hf": 7900,
+        "trail_lf": 2000,
+        "trail_hf": 7900,
+        "damping_mult": 0.5,
+        "damping_fade_expo": 2,
+        "filter_order": 1,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            1.05
+        ]
+    },
+    "scratch_tinny_sample0_rate2": {
+        "impulse_time": 0.55,
+        "attack_lf": 200,
+        "attack_hf": 7900,
+        "trail_lf": 2000,
+        "trail_hf": 7900,
+        "damping_mult": 0.5,
+        "damping_fade_expo": 2,
+        "filter_order": 1,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.9,
+            1.75
+        ]
+    },
+    "scratch_tinny_sample0_rate3": {
+        "impulse_time": 0.45,
+        "attack_lf": 200,
+        "attack_hf": 7900,
+        "trail_lf": 2000,
+        "trail_hf": 7900,
+        "damping_mult": 0.4,
+        "damping_fade_expo": 2,
+        "filter_order": 1,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.45,
+            0.85,
+            1.25,
+            1.65
+        ]
+    },
+    "scratch_tinny_sample0_rate4": {
+        "impulse_time": 0.15,
+        "attack_lf": 200,
+        "attack_hf": 7900,
+        "trail_lf": 2000,
+        "trail_hf": 7900,
+        "damping_mult": 0.4,
+        "damping_fade_expo": 2,
+        "filter_order": 1,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.35,
+            0.65,
+            0.95,
+            1.25,
+            1.55,
+            1.85
+        ]
+    },
+    "scratch_tinny_sample1_rate0": {
+        "impulse_time": 0.85,
+        "attack_lf": 500,
+        "attack_hf": 7900,
+        "trail_lf": 4000,
+        "trail_hf": 7900,
+        "damping_mult": 0.2,
+        "damping_fade_expo": 1,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05
+        ]
+    },
+    "scratch_tinny_sample1_rate1": {
+        "impulse_time": 0.65,
+        "attack_lf": 500,
+        "attack_hf": 7900,
+        "trail_lf": 4000,
+        "trail_hf": 7900,
+        "damping_mult": 0.2,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            1.05
+        ]
+    },
+    "scratch_tinny_sample1_rate2": {
+        "impulse_time": 0.55,
+        "attack_lf": 500,
+        "attack_hf": 7900,
+        "trail_lf": 4000,
+        "trail_hf": 7900,
+        "damping_mult": 0.2,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.9,
+            1.75
+        ]
+    },
+    "scratch_tinny_sample1_rate3": {
+        "impulse_time": 0.45,
+        "attack_lf": 500,
+        "attack_hf": 7900,
+        "trail_lf": 4000,
+        "trail_hf": 7900,
+        "damping_mult": 0.4,
+        "damping_fade_expo": 3,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.45,
+            0.85,
+            1.25,
+            1.65
+        ]
+    },
+    "scratch_tinny_sample1_rate4": {
+        "impulse_time": 0.15,
+        "attack_lf": 500,
+        "attack_hf": 7900,
+        "trail_lf": 4000,
+        "trail_hf": 7900,
+        "damping_mult": 0.4,
+        "damping_fade_expo": 3,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.35,
+            0.65,
+            0.95,
+            1.25,
+            1.55,
+            1.85
+        ]
+    },
+    "scratch_muffled_sample0_rate0": {
+        "impulse_time": 1.2,
+        "attack_lf": 100,
+        "attack_hf": 500,
+        "trail_lf": 100,
+        "trail_hf": 500,
+        "damping_mult": 0.99,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05
+        ]
+    },
+    "scratch_muffled_sample0_rate1": {
+        "impulse_time": 0.75,
+        "attack_lf": 100,
+        "attack_hf": 500,
+        "trail_lf": 100,
+        "trail_hf": 500,
+        "damping_mult": 0.7,
+        "damping_fade_expo": 1,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            1.05
+        ]
+    },
+    "scratch_muffled_sample0_rate2": {
+        "impulse_time": 0.5,
+        "attack_lf": 100,
+        "attack_hf": 500,
+        "trail_lf": 100,
+        "trail_hf": 500,
+        "damping_mult": 0.7,
+        "damping_fade_expo": 1,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.9,
+            1.75
+        ]
+    },
+    "scratch_muffled_sample0_rate3": {
+        "impulse_time": 0.25,
+        "attack_lf": 100,
+        "attack_hf": 500,
+        "trail_lf": 100,
+        "trail_hf": 500,
+        "damping_mult": 0.7,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.45,
+            0.85,
+            1.25,
+            1.65
+        ]
+    },
+    "scratch_muffled_sample0_rate4": {
+        "impulse_time": 0.15,
+        "attack_lf": 100,
+        "attack_hf": 500,
+        "trail_lf": 100,
+        "trail_hf": 500,
+        "damping_mult": 0.7,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.35,
+            0.65,
+            0.95,
+            1.25,
+            1.55,
+            1.85
+        ]
+    },
+    "scratch_muffled_sample1_rate0": {
+        "impulse_time": 1.2,
+        "attack_lf": 100,
+        "attack_hf": 1500,
+        "trail_lf": 100,
+        "trail_hf": 1500,
+        "damping_mult": 0.99,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05
+        ]
+    },
+    "scratch_muffled_sample1_rate1": {
+        "impulse_time": 0.75,
+        "attack_lf": 100,
+        "attack_hf": 1500,
+        "trail_lf": 100,
+        "trail_hf": 1000,
+        "damping_mult": 0.99,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            1.05
+        ]
+    },
+    "scratch_muffled_sample1_rate2": {
+        "impulse_time": 0.7,
+        "attack_lf": 100,
+        "attack_hf": 1500,
+        "trail_lf": 100,
+        "trail_hf": 1500,
+        "damping_mult": 0.99,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.9,
+            1.75
+        ]
+    },
+    "scratch_muffled_sample1_rate3": {
+        "impulse_time": 0.25,
+        "attack_lf": 100,
+        "attack_hf": 1000,
+        "trail_lf": 100,
+        "trail_hf": 1000,
+        "damping_mult": 0.7,
+        "damping_fade_expo": 1,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.45,
+            0.85,
+            1.25,
+            1.65
+        ]
+    },
+    "scratch_muffled_sample1_rate4": {
+        "impulse_time": 0.15,
+        "attack_lf": 100,
+        "attack_hf": 1000,
+        "trail_lf": 100,
+        "trail_hf": 1000,
+        "damping_mult": 0.7,
+        "damping_fade_expo": 1,
+        "filter_order": 2,
+        "hittype": "scratch",
+        "locs": [
+            0.05,
+            0.35,
+            0.65,
+            0.95,
+            1.25,
+            1.55,
+            1.85
+        ]
+    },
+    "hit_tinny_sample0_rate0": {
+        "impulse_time": 0.4,
+        "attack_lf": 1000,
+        "attack_hf": 7900,
+        "trail_lf": 1000,
+        "trail_hf": 7900,
+        "damping_mult": 0.3,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05
+        ]
+    },
+    "hit_tinny_sample0_rate1": {
+        "impulse_time": 0.4,
+        "attack_lf": 1000,
+        "attack_hf": 7900,
+        "trail_lf": 1000,
+        "trail_hf": 7900,
+        "damping_mult": 0.3,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            1.05
+        ]
+    },
+    "hit_tinny_sample0_rate2": {
+        "impulse_time": 0.3,
+        "attack_lf": 1000,
+        "attack_hf": 7900,
+        "trail_lf": 1000,
+        "trail_hf": 7900,
+        "damping_mult": 0.3,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.9,
+            1.75
+        ]
+    },
+    "hit_tinny_sample0_rate3": {
+        "impulse_time": 0.05,
+        "attack_lf": 1000,
+        "attack_hf": 7900,
+        "trail_lf": 1000,
+        "trail_hf": 7900,
+        "damping_mult": 0.3,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.45,
+            0.85,
+            1.25,
+            1.65
+        ]
+    },
+    "hit_tinny_sample0_rate4": {
+        "impulse_time": 0.05,
+        "attack_lf": 1000,
+        "attack_hf": 7900,
+        "trail_lf": 1000,
+        "trail_hf": 7900,
+        "damping_mult": 0.3,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.35,
+            0.65,
+            0.95,
+            1.25,
+            1.55,
+            1.85
+        ]
+    },
+    "hit_tinny_sample1_rate0": {
+        "impulse_time": 0.4,
+        "attack_lf": 2000,
+        "attack_hf": 7500,
+        "trail_lf": 5000,
+        "trail_hf": 7500,
+        "damping_mult": 0.2,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05
+        ]
+    },
+    "hit_tinny_sample1_rate1": {
+        "impulse_time": 0.4,
+        "attack_lf": 2000,
+        "attack_hf": 7500,
+        "trail_lf": 5000,
+        "trail_hf": 7500,
+        "damping_mult": 0.2,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            1.05
+        ]
+    },
+    "hit_tinny_sample1_rate2": {
+        "impulse_time": 0.3,
+        "attack_lf": 2000,
+        "attack_hf": 7500,
+        "trail_lf": 5000,
+        "trail_hf": 7500,
+        "damping_mult": 0.2,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.9,
+            1.75
+        ]
+    },
+    "hit_tinny_sample1_rate3": {
+        "impulse_time": 0.1,
+        "attack_lf": 2000,
+        "attack_hf": 7500,
+        "trail_lf": 5000,
+        "trail_hf": 7500,
+        "damping_mult": 0.2,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.45,
+            0.85,
+            1.25,
+            1.65
+        ]
+    },
+    "hit_tinny_sample1_rate4": {
+        "impulse_time": 0.1,
+        "attack_lf": 2000,
+        "attack_hf": 7500,
+        "trail_lf": 5000,
+        "trail_hf": 7500,
+        "damping_mult": 0.2,
+        "damping_fade_expo": 1,
+        "filter_order": 1,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.35,
+            0.65,
+            0.95,
+            1.25,
+            1.55,
+            1.85
+        ]
+    },
+    "hit_muffled_sample0_rate0": {
+        "impulse_time": 0.3,
+        "attack_lf": 100,
+        "attack_hf": 1000,
+        "trail_lf": 100,
+        "trail_hf": 1000,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05
+        ]
+    },
+    "hit_muffled_sample0_rate1": {
+        "impulse_time": 0.2,
+        "attack_lf": 100,
+        "attack_hf": 1000,
+        "trail_lf": 100,
+        "trail_hf": 1000,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            1.05
+        ]
+    },
+    "hit_muffled_sample0_rate2": {
+        "impulse_time": 0.2,
+        "attack_lf": 100,
+        "attack_hf": 1000,
+        "trail_lf": 100,
+        "trail_hf": 1000,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.9,
+            1.75
+        ]
+    },
+    "hit_muffled_sample0_rate3": {
+        "impulse_time": 0.1,
+        "attack_lf": 100,
+        "attack_hf": 1000,
+        "trail_lf": 100,
+        "trail_hf": 1000,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.45,
+            0.85,
+            1.25,
+            1.65
+        ]
+    },
+    "hit_muffled_sample0_rate4": {
+        "impulse_time": 0.1,
+        "attack_lf": 100,
+        "attack_hf": 1000,
+        "trail_lf": 100,
+        "trail_hf": 1000,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.35,
+            0.65,
+            0.95,
+            1.25,
+            1.55,
+            1.85
+        ]
+    },
+    "hit_muffled_sample1_rate0": {
+        "impulse_time": 0.15,
+        "attack_lf": 100,
+        "attack_hf": 1750,
+        "trail_lf": 100,
+        "trail_hf": 1750,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05
+        ]
+    },
+    "hit_muffled_sample1_rate1": {
+        "impulse_time": 0.2,
+        "attack_lf": 100,
+        "attack_hf": 1750,
+        "trail_lf": 100,
+        "trail_hf": 1750,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            1.05
+        ]
+    },
+    "hit_muffled_sample1_rate2": {
+        "impulse_time": 0.2,
+        "attack_lf": 100,
+        "attack_hf": 1750,
+        "trail_lf": 100,
+        "trail_hf": 1750,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.9,
+            1.75
+        ]
+    },
+    "hit_muffled_sample1_rate3": {
+        "impulse_time": 0.1,
+        "attack_lf": 100,
+        "attack_hf": 1550,
+        "trail_lf": 100,
+        "trail_hf": 1550,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.45,
+            0.85,
+            1.25,
+            1.65
+        ]
+    },
+    "hit_muffled_sample1_rate4": {
+        "impulse_time": 0.05,
+        "attack_lf": 100,
+        "attack_hf": 1550,
+        "trail_lf": 100,
+        "trail_hf": 1550,
+        "damping_mult": 0.9,
+        "damping_fade_expo": 2,
+        "filter_order": 2,
+        "hittype": "hit",
+        "locs": [
+            0.05,
+            0.35,
+            0.65,
+            0.95,
+            1.25,
+            1.55,
+            1.85
+        ]
+    }
+}

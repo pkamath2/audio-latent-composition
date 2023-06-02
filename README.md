@@ -1,6 +1,6 @@
 # Audio Latent Composition
 
-This project is part of a paper titled "Perceptually Guided Audio Texture Generation" under review.
+This project is part of a paper titled "An Example-Based Framework for Perceptually Guided Audio Texture Generation" under review.
     
 [Paper]() | [Demo Webpage](https://guided-control-by-prototypes.s3.ap-southeast-1.amazonaws.com/audio-guided-generation/index.html) | [Citation](#citation)
     
