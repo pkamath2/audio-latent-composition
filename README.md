@@ -70,7 +70,7 @@ streamlit run dim-control-interface-water.py
 ```
     
 ### Citation
-If you use this code for your research, please cite both ours as well as Chai et al., as:
+If you use this code for your research please cite as:
 ```
 (Audio paper under review)
 ```
