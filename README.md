@@ -74,12 +74,4 @@ If you use this code for your research, please cite both ours as well as Chai et
 ```
 (Audio paper under review)
 ```
-```
-@inproceedings{chai2021latent,
-  title={Using latent space regression to analyze and leverage compositionality in GANs},
-  author={Chai, Lucy and Wulff, Jonas and Isola, Phillip},
-  booktitle={International Conference on Learning Representations},
-  year={2021}
- }
-```
 
