@@ -72,6 +72,15 @@ streamlit run dim-control-interface-water.py
 ### Citation
 If you use this code for your research please cite as:
 ```
-(Audio paper under review)
+@ARTICLE{kamath2024example,
+  author={Kamath, Purnima and Gupta, Chitralekha and Wyse, Lonce and Nanayakkara, Suranga},
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing}, 
+  title={Example-Based Framework for Perceptually Guided Audio Texture Generation}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-11},
+  doi={10.1109/TASLP.2024.3393741}
+}
 ```
 
